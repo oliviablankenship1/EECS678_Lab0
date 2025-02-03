@@ -63,7 +63,7 @@ static struct Node* createNode(int data)
     // Hint: newNode->data = data; newNode->next = NULL;
     // Your Code Here
 
-    myNode-> = data;
+    myNode->data = data;
     myNode->next = NULL;
 
     // Return the new node.
@@ -167,7 +167,6 @@ static void printList(struct Node* head)
     // Hint: Update the current node pointer to the next node in the list.
     // Your Code Here
 
-    struct Node* node = head;
     while (head != NULL) {
         printf("%d ", head->data);
         head = head->next;
